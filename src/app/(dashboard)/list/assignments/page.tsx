@@ -27,17 +27,17 @@ const columns = [
   {
     header: "Teacher",
     accessor: "teacher",
-    className: "hidden lg:table-cell",
+    className: "hidden md:table-cell",
   },
   {
     header: "Due Date",
     accessor: "dueDate",
-    className: "hidden lg:table-cell",
+    className: "hidden md:table-cell",
   },
   {
     header: "Actions",
     accessor: "actions",
-    className: "hidden lg:table-cell",
+    className: "hidden md:table-cell",
   },
 ];
 

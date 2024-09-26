@@ -26,32 +26,30 @@ const columns = [
   {
     header: "Student",
     accessor: "student",
-    className: "hidden lg:table-cell",
   },
   {
     header: "Score",
     accessor: "score",
-    className: "hidden lg:table-cell",
+    className: "hidden md:table-cell",
   },
   {
     header: "Teacher",
     accessor: "teacher",
-    className: "hidden lg:table-cell",
+    className: "hidden md:table-cell",
   },
   {
     header: "Class  ",
     accessor: "class",
-    className: "hidden lg:table-cell",
+    className: "hidden md:table-cell",
   },
   {
     header: "Date",
     accessor: "date",
-    className: "hidden lg:table-cell",
+    className: "hidden md:table-cell",
   },
   {
     header: "Actions",
     accessor: "actions",
-    className: "hidden lg:table-cell",
   },
 ];
 
