@@ -23,7 +23,6 @@ const columns = [
   {
     header: "Class",
     accessor: "class",
-    className: "hidden md:table-cell",
   },
   {
     header: "Teacher",
@@ -49,12 +48,8 @@ const ParentListPage = () => {
         key={item.id}
         className="border-b border-gray-200 even:bg-slate-50 text-sm hover:bg-lamaPurpleLight"
       >
-        <td className="flex items-center gap-2 p-4">
-          <div className="flex flex-col">
-            <h3 className="font-semibold">{item.subject}</h3>
-          </div>
-        </td>
-        <td className="hidden md:table-cell">{item.class}</td>
+        <td className="flex items-center gap-2 p-4">{item.subject}</td>
+        <td>{item.class}</td>
         <td className="hidden md:table-cell">{item.teacher}</td>
         <td className="hidden md:table-cell">{item.date}</td>
         <td>
