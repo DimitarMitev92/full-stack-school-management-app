@@ -46,44 +46,42 @@ const data = [
   {
     name: "Jul",
     income: 3490,
-    expense: 4200,
+    expense: 4300,
   },
   {
     name: "Aug",
-    income: 3790,
-    expense: 4740,
+    income: 3490,
+    expense: 4300,
   },
   {
     name: "Sep",
-    income: 3200,
-    expense: 4100,
+    income: 3490,
+    expense: 4300,
   },
   {
     name: "Oct",
-    income: 2990,
-    expense: 3900,
+    income: 3490,
+    expense: 4300,
   },
   {
     name: "Nov",
-    income: 2790,
-    expense: 3700,
+    income: 3490,
+    expense: 4300,
   },
   {
     name: "Dec",
-    income: 2590,
-    expense: 3500,
+    income: 3490,
+    expense: 4300,
   },
 ];
 
 const FinanceChart = () => {
   return (
     <div className="bg-white rounded-xl w-full h-full p-4">
-      {/* TITLE */}
       <div className="flex justify-between items-center">
-        <h1 className="text-lg font-semibold">Attendance</h1>
-        <Image src="/moreDark.png" alt="moreDark" width={20} height={20} />
+        <h1 className="text-lg font-semibold">Finance</h1>
+        <Image src="/moreDark.png" alt="" width={20} height={20} />
       </div>
-      {/* CHART */}
       <ResponsiveContainer width="100%" height="90%">
         <LineChart
           width={500}
@@ -100,16 +98,11 @@ const FinanceChart = () => {
           <XAxis
             dataKey="name"
             axisLine={false}
-            tickLine={false}
             tick={{ fill: "#d1d5db" }}
+            tickLine={false}
             tickMargin={10}
           />
-          <YAxis
-            axisLine={false}
-            tickLine={false}
-            tick={{ fill: "#d1d5db" }}
-            tickMargin={10}
-          />
+          <YAxis axisLine={false} tick={{ fill: "#d1d5db" }} tickLine={false}  tickMargin={20}/>
           <Tooltip />
           <Legend
             align="center"
@@ -122,12 +115,7 @@ const FinanceChart = () => {
             stroke="#C3EBFA"
             strokeWidth={5}
           />
-          <Line
-            type="monotone"
-            dataKey="expense"
-            stroke="#CFCEFF"
-            strokeWidth={5}
-          />
+          <Line type="monotone" dataKey="expense" stroke="#CFCEFF" strokeWidth={5}/>
         </LineChart>
       </ResponsiveContainer>
     </div>
